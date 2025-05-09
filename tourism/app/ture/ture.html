@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TourApp</title>
+    <link rel="stylesheet" href="../../dist/ture.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="title">TourApp</h1>
+        <ul class="nav-links">
+            <li><a href="contact/contact.html">Kontakt</a></li>
+            <li><a href="ture/ture.html">Ture</a></li>
+            <li><a href="#">Restorani</a></li>
+        </ul>
+    </nav>
+
+    <br>
+
+    <div class="container">
+        <table id="tour">
+            <thead>
+                <tr>
+                    <td>Naziv</td>
+                    <td>Duzina ture</td>
+                </tr>
+            </thead>
+            <tbody id="tour-body">
+
+            </tbody>
+        </table>
+    </div>
+
+    <form id="forma">
+
+        <label for="naziv">Naziv:</label>
+        <input type="text" id="naziv" name="naziv" required>
+
+        <label for="opis">Opis:</label>
+        <textarea type="text" id="opis" name="opis" required></textarea>
+
+        <label for="duzina">Duzina:</label>
+        <input type="number" id="duzina" name="duzina">
+
+        <label for="tagovi">Tagovi:</label>
+        <input type="text" id="tagovi" name="tagovi">
+
+        <button type="button" id="addTag">+</button>
+        <button type="button" id="submitBtn">Dodaj</button>
+    </form>
+
+    <br>
+
+    <div id="tourDetails"></div>
+    
+    <script src="ture.js"></script>
+</body>
+</html>
